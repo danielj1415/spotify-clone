@@ -1,0 +1,131 @@
+@import "./fonts.css";
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  
+  .black-rectangle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .songControls{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 64px;
+  }
+
+  .songPlaying{
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+  }
+
+  .songName{
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    color: white;
+    margin-left: 16px;
+  }
+
+  .songArtist{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    color: #B3B3B3;
+    margin-left: 16px;
+  }
+
+  .songInfo{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  .heartIcon{
+    margin-left: 22px;
+  }
+  
+  .songButtons{
+    display: flex;
+    align-items: center;
+  }
+
+  .sliderInfo{
+    display: flex;
+    align-items: center;
+  }
+
+  .song{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    color: #B3B3B3;
+  }
+
+  .otherControls{
+    display:flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+  .playing{
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 32px;
+    height: 32px;
+  }
+  .backGray{
+    margin-left: 24px;
+  }
+
+  .forwardGray {
+    margin-right: 24px;
+  }
+
+  .loopGray{
+    width: 16px;
+    height: 15px;
+  }
+
+  .songSlider{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 700px;
+    height: 4px;
+    background-color: #353535;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+
+  .expandGray{
+    margin-left: 16px;
+  }
+
+  .volumeSlider{
+    margin-left: 8px;
+  }
+
+  .volumeGray{
+    margin-left: 16px;
+  }
+
+  .deviceGray{
+    margin-left: 16px;
+  }

@@ -1,0 +1,124 @@
+@import "./fonts.css";
+
+.playlistsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns with equal width */
+    grid-row-gap: 16px;
+    grid-column-gap: 0px;
+    margin-left: 24px;
+  }
+
+.topPlaylists{
+    width: 1476px;
+    height: 318px;
+    background: linear-gradient(to bottom, rgb(13, 13, 57) 20%, #131313 95%);
+}
+
+.homeIconsContainer{
+    height: 64px;
+    width: 1476px;
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+}
+
+.arrowIcon{
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with 50% opacity */
+    border-radius: 16px;
+}
+.arrowIcon.left{
+    padding-left: 11px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.arrowIcon.right{
+    padding-left: 12px;
+    padding-right: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 8px;
+}
+.leftSetIcons{
+    margin-left: 24px;
+}
+
+.friendIcon{
+    padding:7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    margin-right: 8px;
+}
+
+.profilePicture{
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    margin-left: 8px;
+}
+.rightSetIcons{
+    margin-right: 24px;
+}
+
+.unclickable{
+    opacity: 50%;
+}
+
+.recommendedPlaylists{
+    margin-top: 32px;
+}
+
+.heading{
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: -1.5px;
+    margin-left: 24px;
+}
+
+.playlistPicture{
+    box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.3);
+    height: 80px;
+    width: 80px;
+}
+
+.playlistCard1{
+    display: flex;
+    align-items: center;
+    width: 460px;
+    border-radius: 4px;
+}
+
+.playlistCard1:hover{
+    background-color: rgba(255, 255, 255, 0.15)
+}
+
+.playlistCard1Background{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 380px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.playlistTitle{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+.bottomRow{
+    margin-top: 16px;
+}
+
+.playlistsRow
+{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,42 @@
+@import "./fonts.css";
+
+.text{
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    color: #A3A3A3;
+    font-size: 16px;
+    margin-left: 23px;
+}
+
+.text:hover{
+    color: white;
+}
+
+.hovered{
+    color: white;
+}
+
+.iconText{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+.mainContainer{
+    background-color: #131313;
+    width: 420px;
+    margin-left: 8px;
+    margin-top: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: fixed;
+    z-index: 1;
+    border-radius: 8px;
+}

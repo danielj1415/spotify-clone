@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/src/assets/fonts/HelveticaNeue.ttc');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/src/assets/fonts/HelveticaNeue.ttc');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/src/assets/fonts/HelveticaNeue.ttc');
+    font-weight: light;
+    font-style: normal;
+}
+
+
+
+

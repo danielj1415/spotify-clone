@@ -1,0 +1,118 @@
+/* Playlist.css */
+@import "./fonts.css";
+
+.playlistContainer {
+    background-color: #131313;
+    width: 420px;
+    height: 622px;
+    /* 564 for right monitor with dock underneath, 622 for left monitor with no dock */
+    z-index: 9998;
+    position: fixed;
+    top: 232px;
+    left: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: auto; /* Enable scrolling when content overflows */
+
+  }
+  .playlistContainer::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+  }
+
+  .playlistContainer::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Make the scrollbar thumb transparent */
+    border-radius: 3px; /* Adjust the border-radius as needed */
+  }
+
+  .playlistContainer:hover::-webkit-scrollbar-thumb {
+    background-color: #A8A8A8; /* Make the scrollbar thumb transparent */
+  }
+  
+  .searchIcon{
+    width: 16px;
+    height: 16px;
+  }
+
+  .playlistsBottomRow{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 16px;
+    justify-content: space-between;
+  }
+
+  .recentsRow{
+    display: flex;
+    align-items: center;
+  }
+
+  .recents{
+    margin-right: 12px;
+    color: #ACACAC;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .playlistItem {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .playlistImage{
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+  }
+
+  .playlistTextContainer{
+    margin-left: 16px;
+  }
+
+  .playlistName{
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    margin: 8px 0;
+  }
+
+  .playlistCreator{
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: #A8A8A8;
+    margin: 8px 0;
+  }
+
+  .hoveredBox{
+    width: 396px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    margin-left: 8px;
+    border-radius: 8px;
+  }
+
+  .hoveredBox:hover{
+    background-color: #242424;
+  }
+
+  @media (max-height: 943px){
+    .playlistContainer {
+        background-color: #131313;
+        width: 420px;
+        height: 564px;
+        /* 564 for right monitor with dock underneath, 622 for left monitor with no dock */
+        z-index: 9998;
+        position: fixed;
+        top: 232px;
+        left: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        overflow: auto; /* Enable scrolling when content overflows */
+    
+      }
+  }
