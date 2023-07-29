@@ -11,7 +11,7 @@ function App() {
         <SearchHome />
         <Library />
         <MusicMenu />
-        <Home />
+        {/*<Home />*/}
       </div>
       
   );

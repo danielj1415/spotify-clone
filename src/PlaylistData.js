@@ -18,10 +18,12 @@ import playlist17 from "./assets/images/playlistImages/playlist17.png";
 import playlist18 from "./assets/images/playlistImages/playlist18.png";
 import playlist19 from "./assets/images/playlistImages/playlist19.png";
 import playlist20 from "./assets/images/playlistImages/playlist20.png";
+import PlaylistSpiderman from "./PlaylistSpiderman";
+import PlaylistKeshi from "./PlaylistKeshi";
 
 const playlistData = [
-    { name: 'Spiderman just like me fr',              image: playlist1,   creator: "Daniel Jong"},
-    { name: 'why did she leave me',                   image: playlist2,   creator: "Daniel Jong" },
+    { name: 'Spiderman just like me fr',              image: playlist1,   creator: "Daniel Jong", playlistComponent: PlaylistSpiderman },
+    { name: 'why did she leave me',                   image: playlist2,   creator: "Daniel Jong", playlistComponent: PlaylistKeshi },
     { name: 'hopeless romantic in korea',             image: playlist3,   creator: "Daniel Jong" },
     { name: 'why did she leave me pt. 2',             image: playlist4,   creator: "Daniel Jong" },
     { name: 'loml',                                   image: playlist5,   creator: "Daniel Jong" },

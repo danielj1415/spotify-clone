@@ -12,7 +12,7 @@
     width: 420px;
     height: 112px;
     background-color: #131313;
-    z-index: 9999;
+    z-index: 1;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }

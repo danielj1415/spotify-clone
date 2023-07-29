@@ -1,0 +1,11 @@
+.keshiContainer{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    width: 1476px;
+    height: 846px;
+    background-color: #131313; /* Blue color with 50% opacity */
+    z-index: 1; /* Make sure the overlay is on top of everything */
+    border-radius: 8px;
+    overflow: auto;
+}

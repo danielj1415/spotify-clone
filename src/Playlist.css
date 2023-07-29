@@ -100,6 +100,19 @@
     background-color: #242424;
   }
 
+  .playlistOverlay {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    width: 1476px;
+    height: 846px;
+    background-color: #131313; /* Blue color with 50% opacity */
+    z-index: 10000; /* Make sure the overlay is on top of everything */
+    border-radius: 8px;
+    overflow: auto;
+    
+  }
+
   @media (max-height: 943px){
     .playlistContainer {
         background-color: #131313;
