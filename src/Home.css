@@ -7,7 +7,7 @@
     right: 8px;
     border-radius: 8px;
     overflow: auto;
-    z-index: 100000;
+    z-index: 0;
 }
 .container::-webkit-scrollbar {
     width: 8px;

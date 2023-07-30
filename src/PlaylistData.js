@@ -42,6 +42,7 @@ const playlistData = [
     { name: 'the week',                               image: playlist11,   creator: "Daniel Jong" },
     { name: 'night vibes long drives',                image: playlist19,   creator: "Daniel Jong" },
     { name: 'lofi chillhop',                          image: playlist20,   creator: "Daniel Jong" },
+    { name: null,                                     image: null,         creator: null}
 
   ];
   
