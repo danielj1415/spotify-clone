@@ -10,6 +10,7 @@ import "./TopPlaylists.css";
 import "./PlaylistFeed.css";
 import "./PlaylistSpiderman.css";
 import "./PlaylistKeshi.css";
+import "./PlaylistLaufey.css";
 
 import App from './App';
 
