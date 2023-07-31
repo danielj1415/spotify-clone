@@ -32,6 +32,7 @@ function LeftSideBar(){
      const handlePlaylistClick = (index) => {
         setSelectedPlaylistIndex(index);
         setPlaylistDisplayed(true);
+        setHomeDisplayed(false);
     }
 
     const handleHomeClick = () => {
