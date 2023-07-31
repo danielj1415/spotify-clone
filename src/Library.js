@@ -7,7 +7,7 @@ import libraryIconGray from "./assets/images/LibraryGray.svg";
 import libraryIconWhite from "./assets/images/LibraryWhite.svg";
 import Playlist from './Playlist';
 
-function Library({ showPlaylist }) {
+function Library() {
 
     const [isLibraryHovered, setLibraryHovered] = React.useState(false);
 
@@ -35,7 +35,6 @@ function Library({ showPlaylist }) {
                 {/* This is just as sample comment */}
             </div>
         </div>
-        <Playlist showPlaylist={showPlaylist}/>
       </div>
     );
   }

@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react';
 import "./Playlist.css";
 import playlistData from './PlaylistData';
@@ -5,21 +6,28 @@ import searchIcon from "./assets/images/Search.svg";
 import dropdownIcon from "./assets/images/Dropdown.svg";
 import PlaylistSpiderman from "./PlaylistSpiderman";
 
-function Playlist({ showPlaylist }) {
+function Playlist(props) {
 
     const [selectedPlaylistIndex, setSelectedPlaylistIndex] = useState(null);
-    const [playlistClicked, setPlaylistClicked] = React.useState(false);
+    let { homeClicked } = props;
+    const {setHomeClicked } = props;
 
     const handlePlaylistClick = (index) => {
         setSelectedPlaylistIndex(index);
+        setHomeClicked(false);
+        console.log({index});
+        console.log({homeClicked});
     }
 
-    const SelectedPlaylistComponent = selectedPlaylistIndex !== null ? playlistData[selectedPlaylistIndex].playlistComponent : null;
+    let SelectedPlaylistComponent = selectedPlaylistIndex !== null ? playlistData[selectedPlaylistIndex].playlistComponent : null;
+
+    if(homeClicked === true){
+        SelectedPlaylistComponent = null;
+    }
 
     return(
         <div>
-            {SelectedPlaylistComponent &&
-            <SelectedPlaylistComponent/>}
+            { !homeClicked && SelectedPlaylistComponent !== null && <SelectedPlaylistComponent className = "hidden" /> }
             <div className="playlistContainer">
                 <div className="playlists">
                     <div className = "playlistsBottomRow">
@@ -33,7 +41,7 @@ function Playlist({ showPlaylist }) {
                     </div>
                     {
                         playlistData.map((playlist, index) => (
-                            <div className={`playlistItem ${selectedPlaylistIndex === index ? 'clicked' : ''}`}
+                            <div className={`playlistItem ${selectedPlaylistIndex === index ? 'clicked' : ''}` }
                             key={index}
                             >
                                 <div className = "hoveredBox" onClick={() => handlePlaylistClick(index)}>

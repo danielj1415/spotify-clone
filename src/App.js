@@ -4,14 +4,16 @@ import SearchHome from './SearchHome';
 import Library from "./Library";
 import MusicMenu from "./MusicMenu";
 import Home from "./Home";
+import LeftSideBar from "./LeftSideBar";
 
 function App() {
   return (
       <div className="yourMom">
-        <SearchHome />
-        <Library />
+        <LeftSideBar/>
+        {/*<SearchHome />
+        <Library />*/}
         <MusicMenu />
-        <Home />
+        {/*<Home />*/}
       </div>
       
   );

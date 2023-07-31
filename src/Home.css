@@ -7,7 +7,7 @@
     right: 8px;
     border-radius: 8px;
     overflow: auto;
-    z-index: 0;
+    z-index: -2;
 }
 .container::-webkit-scrollbar {
     width: 8px;
@@ -33,6 +33,12 @@
       border-radius: 8px;
       overflow: auto;
   }
+  }
+  .homeVisibility.visible{
+    z-index: 2;
+  }
+  .homeVisibility.notvisible{
+    z-index: -2;
   }
 
 

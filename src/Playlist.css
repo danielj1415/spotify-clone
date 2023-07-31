@@ -129,3 +129,11 @@
     
       }
   }
+
+  .homeVisibility.visible{
+    z-index: 2;
+  }
+  .homeVisibility.notvisible{
+    z-index: -2;
+  }
+ 

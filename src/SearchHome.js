@@ -8,22 +8,25 @@ import searchIconWhite from "./assets/images/SearchWhite.svg";
 import Playlist from "./Playlist";
 import Home from "./Home";
 
-function SearchHome({ showPlaylist, setShowPlaylist }){
+function SearchHome(){
 
     const [isHomeHovered, setHomeHovered] = React.useState(false);
     const [isSearchHovered, setSearchHovered] = React.useState(false);
-    const [homeClicked, setHomeClicked] = React.useState(false);
-    
+    let [homeClicked, setHomeClicked] = React.useState(false);
+    let [homeDisplayed, setHomeDisplayed] = React.useState(false);
 
     const handleHomeClick = () => {
-        setHomeClicked(!homeClicked);
-        //setShowPlaylist(!showPlaylist);
-        //setSelectedPlaylistIndex(null);
+        setHomeClicked(true);
+        if(!homeClicked){
+            setHomeDisplayed(true);
+        }
+        console.log("SearchHome: " + homeClicked);
+        console.log("SearchHome: " + homeDisplayed);
     }
 
     return(
         <div className = "mainContainer">
-            {homeClicked && <Home/>}
+            {homeDisplayed === true && <Home/>}
             <div className = "iconText" 
                 onMouseEnter={() => setHomeHovered(true)}
                 onMouseLeave={() => setHomeHovered(false)}
@@ -38,7 +41,7 @@ function SearchHome({ showPlaylist, setShowPlaylist }){
                 <img src = {isSearchHovered ? searchIconWhite : searchIconGray} alt="searchIcon" className = "icon"/>
                 <p className={isSearchHovered ? "text hovered" : "text"}>Search</p>
             </div>
-            
+            <Playlist homeDisplayed={homeClicked} setHomeClicked={setHomeClicked}/>
         </div>
     );
 }

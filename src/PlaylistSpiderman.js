@@ -3,7 +3,6 @@
 import React from 'react';
 
 function PlaylistSpiderman() {
-    console.log("click");
   return (
     <div>
       <div className = "spidermanContainer">
