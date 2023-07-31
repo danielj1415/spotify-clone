@@ -4,7 +4,6 @@ import "./Playlist.css";
 import playlistData from './PlaylistData';
 import searchIcon from "./assets/images/Search.svg";
 import dropdownIcon from "./assets/images/Dropdown.svg";
-import PlaylistSpiderman from "./PlaylistSpiderman";
 
 function Playlist(props) {
 

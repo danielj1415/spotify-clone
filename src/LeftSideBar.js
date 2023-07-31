@@ -5,7 +5,6 @@ import homeIconGray from "./assets/images/HomeGray.svg";
 import homeIconWhite from "./assets/images/HomeWhite.svg";
 import searchIconGray from "./assets/images/SearchGray.svg";
 import searchIconWhite from "./assets/images/SearchWhite.svg";
-import Playlist from "./Playlist";
 import Home from "./Home";
 
 import enlargeIcon from "./assets/images/Enlarge.svg";
@@ -21,7 +20,6 @@ function LeftSideBar(){
 
     const [isHomeHovered, setHomeHovered] = React.useState(false);
     const [isSearchHovered, setSearchHovered] = React.useState(false);
-    let [homeClicked, setHomeClicked] = React.useState(false);
     let [homeDisplayed, setHomeDisplayed] = React.useState(true);
     let [playlistDisplayed, setPlaylistDisplayed] = React.useState(false);
     const [isLibraryHovered, setLibraryHovered] = React.useState(false);
@@ -36,10 +34,7 @@ function LeftSideBar(){
     }
 
     const handleHomeClick = () => {
-        setHomeClicked(true);
-        if(!homeClicked){
-            setHomeDisplayed(true);
-        }
+        setHomeDisplayed(true);
         setPlaylistDisplayed(false);
     }
 

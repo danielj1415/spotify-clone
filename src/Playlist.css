@@ -6,7 +6,7 @@
     width: 420px;
     height: 614px;
     /* 556 for right monitor with dock underneath, 614 for left monitor with no dock */
-    z-index: 9998;
+    z-index: 9999;
     position: fixed;
     top: 240px;
     left: 8px;
@@ -100,28 +100,15 @@
     background-color: #242424;
   }
 
-  .playlistOverlay {
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    width: 1476px;
-    height: 846px;
-    background-color: #131313; /* Blue color with 50% opacity */
-    z-index: 10000; /* Make sure the overlay is on top of everything */
-    border-radius: 8px;
-    overflow: auto;
-    
-  }
-
   @media (max-height: 943px){
     .playlistContainer {
         background-color: #131313;
         width: 420px;
         height: 556px;
-        /* 556 for right monitor with dock underneath, 614 for left monitor with no dock */
+        /* 564 for right monitor with dock underneath, 614 for left monitor with no dock */
         z-index: 9998;
         position: fixed;
-        top: 232px;
+        top: 240px;
         left: 8px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -130,10 +117,4 @@
       }
   }
 
-  .homeVisibility.visible{
-    z-index: 2;
-  }
-  .homeVisibility.notvisible{
-    z-index: -2;
-  }
  
