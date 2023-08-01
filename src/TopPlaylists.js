@@ -3,7 +3,6 @@ import "./TopPlaylists.css";
 
 import leftArrow from "./assets/images/icons/LeftArrow.svg";
 import rightArrow from "./assets/images/icons/RightArrow.svg";
-import SamplePlaylist from "./assets/images/SamplePlaylist.png";
 import profilePicture from "./assets/images/ProfilePicture.png";
 import friendGray from "./assets/images/icons/FriendGray.svg";
 

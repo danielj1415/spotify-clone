@@ -16,6 +16,11 @@ import playlistData from './PlaylistData';
 import searchIcon from "./assets/images/Search.svg";
 import dropdownIcon from "./assets/images/Dropdown.svg";
 
+import leftArrow from "./assets/images/icons/LeftArrow.svg";
+import rightArrow from "./assets/images/icons/RightArrow.svg";
+import profilePicture from "./assets/images/ProfilePicture.png";
+import friendGray from "./assets/images/icons/FriendGray.svg";
+
 function LeftSideBar(){
 
     const [isHomeHovered, setHomeHovered] = React.useState(false);
