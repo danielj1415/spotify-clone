@@ -23,9 +23,9 @@ import PlaylistKeshi from "./PlaylistKeshi";
 import PlaylistLaufey from "./PlaylistLaufey";
 
 const playlistData = [
+    { name: 'Spiderman just like me fr',              image: playlist1,   creator: "Daniel Jong", playlistComponent: PlaylistSpiderman },
     { name: 'loml',                                   image: playlist5,   creator: "Daniel Jong", playlistComponent: PlaylistLaufey  },
     { name: 'why did she leave me',                   image: playlist2,   creator: "Daniel Jong", playlistComponent: PlaylistKeshi },
-    { name: 'Spiderman just like me fr',              image: playlist1,   creator: "Daniel Jong", playlistComponent: PlaylistSpiderman },
     { name: 'hopeless romantic in korea',             image: playlist3,   creator: "Daniel Jong", playlistComponent: null },
     { name: 'why did she leave me pt. 2',             image: playlist4,   creator: "Daniel Jong", playlistComponent: null  },
     { name: 'chill-wave',                             image: playlist6,   creator: "Daniel Jong", playlistComponent: null  },

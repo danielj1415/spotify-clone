@@ -13,3 +13,101 @@
 .randomText{
     color: white;
 }
+
+@media (max-height: 943px){
+    .spidermanContainer{
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        width: 1476px;
+        height: 788px;
+        background-color: #131313; /* Blue color with 50% opacity */
+        z-index: 2; /* Make sure the overlay is on top of everything */
+        border-radius: 8px;
+        overflow: auto;
+    }
+}
+
+.playlistCoverSpiderman{
+    width: 232px;
+    height: 232px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.white{
+    color: white;
+}
+
+.gray{
+    color: #BBC0C2;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.fs14{
+    font-size: 14px;
+}
+
+.fs96{
+    font-size: 96px;
+}
+
+.noBubble{
+    margin-right: 4px;
+}
+
+.profileCreatorSongInfo{
+    display: flex;
+    align-items: center;
+}
+
+.playlistInformation{
+    display: flex;
+    align-items: end;
+    margin-left: 24px;
+    margin-top: 84px;
+}
+  
+  .fs14, .fs96, .white, .gray, .bold {
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+  }
+
+  .publicNameInfo{
+    margin-left: 24px;
+  }
+  
+  .publicPlaylist{
+    margin-bottom: 0px; /* Adjust the margin at the bottom of the p elements */
+  }
+  
+  .profileCreatorSongInfo {
+    margin-top: 24px; /* Adjust the margin at the top of the div */
+  }
+  
+  /* Optional: If you want to adjust spacing between the p elements inside profileCreatorSongInfo */
+  .profileCreatorSongInfo{
+    margin-right: 4px; /* Adjust the margin between the p elements */
+  }
+
+  .totalMinutes{
+    margin-left: 4px;
+  }
+
+  .dot {
+    padding: 0 4px; /* Adjust the padding values as needed */
+  }
+
+  .topGradientSpiderman{
+    width: 1476px;
+    height: 340px;
+    background: linear-gradient(to bottom, #C81D8B 0%, #690F49 95%);
+  }
+
+  .bottomGradientSpiderman{
+    width: 1476px;
+    height: 1200px;
+    background: linear-gradient(to bottom, #4E0C37 0%, #131313 20%);
+  }

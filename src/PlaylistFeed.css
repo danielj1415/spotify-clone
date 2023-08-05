@@ -64,9 +64,3 @@
 .padding{
     padding-bottom: 24px;
 }
-
-@media (max-height: 943px){
-    .padding{
-        padding-bottom: 82px;
-    }
-  }

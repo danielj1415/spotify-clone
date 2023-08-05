@@ -59,6 +59,11 @@
     border-radius: 16px;
     margin-left: 8px;
 }
+
+.noBubble{
+    padding: 0px;
+    margin-left: 0px;
+}
 .rightSetIcons{
     margin-right: 24px;
 }
