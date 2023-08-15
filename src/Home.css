@@ -1,6 +1,6 @@
 .homeSubContainer{
     width: 1476px;
-    height: 846px;
+    height: 840px;
     background-color: #131313;
     position: fixed;
     top: 8px;
@@ -8,6 +8,20 @@
     border-radius: 8px;
     overflow: auto;
     z-index: 2;
+}
+
+@media (min-height: 880px) and ( max-height: 880px){
+  .homeSubContainer{
+    width: 1476px;
+    height: 782px;
+    background-color: #131313;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    border-radius: 8px;
+    overflow: auto;
+    z-index: 2;
+}
 }
 .container::-webkit-scrollbar {
     width: 8px;
@@ -20,19 +34,6 @@
   
   .container::-webkit-scrollbar-thumb:hover {
     background-color: #808080; /* Customize the scrollbar thumb color on hover */
-  }
-
-  @media (max-height: 943px){
-    .homeSubContainer{
-      width: 1476px;
-      height: 788px;
-      background-color: #131313;
-      position: fixed;
-      top: 8px;
-      right: 8px;
-      border-radius: 8px;
-      overflow: auto;
-  }
   }
   .homeVisibility.visible{
     z-index: 2;

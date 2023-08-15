@@ -4,9 +4,9 @@
 .playlistContainer {
     background-color: #131313;
     width: 420px;
-    height: 614px;
+    height: 608px;
     /* 556 for right monitor with dock underneath, 614 for left monitor with no dock */
-    z-index: 9999;
+    z-index: 1;
     position: fixed;
     top: 240px;
     left: 8px;
@@ -100,21 +100,20 @@
     background-color: #242424;
   }
 
-  @media (max-height: 943px){
+  @media (min-height: 880px) and ( max-height: 880px){
     .playlistContainer {
-        background-color: #131313;
-        width: 420px;
-        height: 556px;
-        /* 564 for right monitor with dock underneath, 614 for left monitor with no dock */
-        z-index: 9998;
-        position: fixed;
-        top: 240px;
-        left: 8px;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        overflow: auto; /* Enable scrolling when content overflows */
-    
-      }
+      background-color: #131313;
+      width: 420px;
+      height: 550px;
+      /* 556 for right monitor with dock underneath, 614 for left monitor with no dock */
+      z-index: 1;
+      position: fixed;
+      top: 240px;
+      left: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      overflow: auto; /* Enable scrolling when content overflows */
+  
+    }
   }
-
  

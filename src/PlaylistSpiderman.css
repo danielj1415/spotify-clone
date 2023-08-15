@@ -3,30 +3,32 @@
     top: 8px;
     right: 8px;
     width: 1476px;
-    height: 846px;
+    height: 840px;
     background-color: #131313; /* Blue color with 50% opacity */
     z-index: 2; /* Make sure the overlay is on top of everything */
     border-radius: 8px;
     overflow: auto;
 }
 
+
+@media (min-height: 880px) and ( max-height: 880px){
+  .spidermanContainer{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    width: 1476px;
+    height: 782px;
+    z-index: 2; /* Make sure the overlay is on top of everything */
+    border-radius: 8px;
+    overflow: auto;
+}
+}
+
 .randomText{
     color: white;
 }
 
-@media (max-height: 943px){
-    .spidermanContainer{
-        position: fixed;
-        top: 8px;
-        right: 8px;
-        width: 1476px;
-        height: 788px;
-        background-color: #131313; /* Blue color with 50% opacity */
-        z-index: 2; /* Make sure the overlay is on top of everything */
-        border-radius: 8px;
-        overflow: auto;
-    }
-}
+
 
 .playlistCoverSpiderman{
     width: 232px;
