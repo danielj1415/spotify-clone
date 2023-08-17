@@ -128,5 +128,15 @@
   .dot {
     padding: 0 4px; /* Adjust the padding values as needed */
   }
+  .topGradientSpiderman{
+    width: 1476px;
+    height: 340px;
+    background: linear-gradient(to bottom, #C81D8B 0%, #690F49 95%);
+  }
+  .bottomGradientSpiderman{
+    width: 1476px;
+    height: 1200px;
+    background: linear-gradient(to bottom, #4E0C37 0%, #131313 20%);
+  }
 
 
