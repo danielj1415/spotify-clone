@@ -15,7 +15,7 @@ function PlaylistLaufey() {
             <img src = {PlaylistImageLaufey} className = "playlistCover"/>
             <div className = "publicNameInfo">
               <p className = "fs14 white bold publicPlaylist">Public Playlist</p>
-              <p className = "fs96 white bold">{playlistData[2].name}</p>
+              <p className = "fs96 white bold">{playlistData[1].name}</p>
               <div className= "profileCreatorSongInfo">
                 <img src = {profilePicture} className = "profilePicture noBubble"/>
                 <p className = "fs14 white bold">{playlistData[2].creator}</p>

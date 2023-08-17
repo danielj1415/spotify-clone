@@ -1,5 +1,5 @@
 import "./PlaylistFeed.css";
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 import playlistData from './PlaylistData';
 import spotifyData from "./SpotifyPlaylistData";
@@ -7,9 +7,31 @@ import podcastData from "./PodcastData";
 
 function PlaylistFeed() {
 
-    const PodcastCards = podcastData.slice(0, 7);
-    const SpotifyCards = spotifyData.slice(0, 7);
-    const PlaylistCards1 = playlistData.slice(8, 15);
+    let PodcastCards = podcastData.slice(0, 7);
+    let SpotifyCards = spotifyData.slice(0, 7);
+    let PlaylistCards1 = playlistData.slice(8, 15);
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+        };
+
+        // Add event listener to update windowWidth on window resize
+        window.addEventListener('resize', handleResize);
+
+        // Remove event listener when component unmounts
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    if(windowWidth <= 1512){
+        PodcastCards = podcastData.slice(0, 5);
+        SpotifyCards = spotifyData.slice(0, 5);
+        PlaylistCards1 = playlistData.slice(8, 13);
+    }
     return(
         <div className = "padding">
             <div className = "showTitleAll">

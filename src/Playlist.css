@@ -116,4 +116,21 @@
   
     }
   }
+
+  @media (min-height: 769px) and ( max-height: 769px){
+    .playlistContainer {
+      background-color: #131313;
+      width: 420px;
+      height: 440px;
+      /* 556 for right monitor with dock underneath, 614 for left monitor with no dock */
+      z-index: 1;
+      position: fixed;
+      top: 240px;
+      left: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      overflow: auto; /* Enable scrolling when content overflows */
+  
+    }
+  }
  
