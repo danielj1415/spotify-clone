@@ -200,15 +200,18 @@
     margin-top: 36px;
     margin-left: 46px;
   }
+
+  .playlistIndex{
+    margin-right: 16px;
+  }
+
+  .playlistAlbum{
+    margin-left: 539px;
+  }
   
   .playlistClock{
     width: 16px;
     height: 16px;
-  }
-
-  .playlistsTitle{
-    margin-left: 16px;
-    margin-right: 536px;
   }
 
   .playlistDate{

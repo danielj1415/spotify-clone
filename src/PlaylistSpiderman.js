@@ -93,7 +93,7 @@ function PlaylistSpiderman() {
             </div>
           </div>
           <div className = "playlistControls3">
-            <p className = {isIndexHovered ? "playlistIndex fs14 white" : "playlistIndex fs14 gray"}
+            <p className = {isIndexHovered ? " playlistIndex fs14 white" : "playlistIndex fs14 gray"}
             onMouseEnter={() => setIndexHovered(true)}
             onMouseLeave={() => setIndexHovered(false)}>#</p>
             <p className = {isTitleHovered ? "playlistsTitle fs14 white" : "playlistsTitle fs14 gray"}
