@@ -127,4 +127,4 @@ const PlaylistSpidermanData = [
     },
 ];
 
-export default podcastData;
+export default PlaylistSpidermanData;

@@ -22,7 +22,15 @@ import PlaylistDropdownWhite from "./assets/images/icons/PlaylistDropdownWhite.s
 import PlaylistClockGray from "./assets/images/icons/PlaylistClockGray.svg";
 import PlaylistClockWhite from "./assets/images/icons/PlaylistClockWhite.svg";
 
+import PlaylistSpidermanData from "./PlaylistSpidermanData";
+
 function PlaylistSpiderman() {
+
+  function formatDuration(durationInSeconds) {
+    const minutes = Math.floor(durationInSeconds / 60);
+    const seconds = durationInSeconds % 60;
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
 
   const [isPlaybuttonClicked, setPlaybuttonClicked] = React.useState(false);
   const [isEnhanceHovered, setEnhanceHovered] = React.useState(false);
@@ -98,6 +106,21 @@ function PlaylistSpiderman() {
             <img src = {isClockHovered ? PlaylistClockWhite : PlaylistClockGray} className = "playlistDuration"
             onMouseEnter={() => setClockHovered(true)}
             onMouseLeave={() => setClockHovered(false)}/>
+          </div>
+          <div className = "playlistSong">
+            <div className = "playlistHovered">
+              <p className = "gray fs14 songIndex">1</p>
+              <img src = {PlaylistSpidermanData[0].image} className = "songImage"/>
+              <div className = "songTitleArtists">
+                <p className = "white fs14 songTitle">{PlaylistSpidermanData[0].title}</p>
+                <p className = "gray fs14  songArtist">{PlaylistSpidermanData[0].artists}</p>
+              </div>
+              <div className = "songAlbum">
+              <p className = "gray fs14">{PlaylistSpidermanData[0].album}</p> 
+              </div>
+              <p className = "gray fs14">{PlaylistSpidermanData[0].dateAdded}</p>
+              <p className = "gray fs14">{formatDuration(PlaylistSpidermanData[0].duration)}</p>
+            </div>
           </div>
         </div>
       </div>
