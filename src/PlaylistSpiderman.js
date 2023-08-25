@@ -84,28 +84,18 @@ function PlaylistSpiderman() {
               <img src = {isSearchHovered ? PlaylistSearchWhite : PlaylistSearchGray} className = "playlistSearch"
               onMouseEnter={() => setSearchHovered(true)}
               onMouseLeave={() => setSearchHovered(false)}/>
-              <p className = {isCustomHovered ? "playlistCustom white fs14" : "playlistCustom gray fs14"}
-              onMouseEnter={() => setCustomHovered(true)}
-              onMouseLeave={() => setCustomHovered(false)}>Custom Order</p>
+              <p className = "playlistCustom fs14 gray">Custom order</p>
               <img src = {isDropdownHovered ? PlaylistDropdownWhite : PlaylistDropdownGray} className = "playlistDropdown"
               onMouseEnter={() => setDropdownHovered(true)}
               onMouseLeave={() => setDropdownHovered(false)}/>
             </div>
           </div>
           <div className = "playlistControls3">
-            <p className = {isIndexHovered ? " playlistIndex fs14 white" : "playlistIndex fs14 gray"}
-            onMouseEnter={() => setIndexHovered(true)}
-            onMouseLeave={() => setIndexHovered(false)}>#</p>
-            <p className = {isTitleHovered ? "playlistsTitle fs14 white" : "playlistsTitle fs14 gray"}
-            onMouseEnter={() => setTitleHovered(true)}
-            onMouseLeave={() => setTitleHovered(false)}>Title</p>
-            <p className = {isAlbumHovered ? "playlistAlbum fs14 white" : "playlistAlbum fs14 gray"}
-            onMouseEnter={() => setAlbumHovered(true)}
-            onMouseLeave={() => setAlbumHovered(false)}>Album</p>
-            <p className = {isDateHovered ? "playlistDate fs14 white" : "playlistDate fs14 gray"}
-            onMouseEnter={() => setDateHovered(true)}
-            onMouseLeave={() => setDateHovered(false)}>Date added</p>
-            <img src = {isClockHovered ? PlaylistClockWhite : PlaylistClockGray} className = "playlistClock"
+            <p className = "playlistIndex fs14 gray">#</p>
+            <p className = "playlistsTitle fs14 gray">Title</p>
+            <p className = "playlistAlbum fs14 gray">Album</p>
+            <p className = "playlistDate fs14 gray">Date added</p>
+            <img src = {isClockHovered ? PlaylistClockWhite : PlaylistClockGray} className = "playlistDuration"
             onMouseEnter={() => setClockHovered(true)}
             onMouseLeave={() => setClockHovered(false)}/>
           </div>
