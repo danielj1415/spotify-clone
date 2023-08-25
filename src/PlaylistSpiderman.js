@@ -116,10 +116,11 @@ function PlaylistSpiderman() {
                 <p className = "gray fs14  songArtist">{PlaylistSpidermanData[0].artists}</p>
               </div>
               <div className = "songAlbum">
-              <p className = "gray fs14">{PlaylistSpidermanData[0].album}</p> 
+                <p className = "gray fs14">{PlaylistSpidermanData[0].album}</p> 
               </div>
-              <p className = "gray fs14">{PlaylistSpidermanData[0].dateAdded}</p>
-              <p className = "gray fs14">{formatDuration(PlaylistSpidermanData[0].duration)}</p>
+              <p className = "gray fs14 songDate">{PlaylistSpidermanData[0].dateAdded}</p>
+              <p className = "gray fs14 songDuration">{formatDuration(PlaylistSpidermanData[0].duration)}</p>
+              <img src = {PlaylistMoreGray} className = "songMore"/>
             </div>
           </div>
         </div>

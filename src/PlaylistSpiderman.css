@@ -220,6 +220,10 @@
   .playlistHovered{
     display: flex;
     align-items: center;
+    background-color: green;
+    width: 1428px;
+    height: 56px;
+    margin-left: 24px;
   }
 
   .songImage{
@@ -238,8 +242,9 @@
     align-items: flex-start;
     justify-content: center;
     background-color: blue;
-    width: 422px;
+    width: 488px;
     height: 40px;
+    margin-left: 16px;
   }
   .songAlbum{
     width: 362px;
@@ -247,6 +252,26 @@
     background-color: red;
     display: flex;
     align-items: center;
+    margin-left: 24px;
   }
+  .songIndex{
+    margin-left: 21px;
+  }
+  .songImage{
+    margin-left: 18px;
+  }
+  .songDate{
+    margin-left: 24px;
+  }
+
+  .songDuration{
+    margin-left: 270px;
+  }
+  .songMore{
+    width: 24px;
+    height: 4px;
+    margin-left: 12px;
+  }
+
   
 
