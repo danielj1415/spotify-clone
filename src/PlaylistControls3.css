@@ -1,0 +1,32 @@
+
+@import "./fonts.css";
+
+.playlistControls3{
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    margin-top: 36px;
+  }
+  .playlistsTitle{
+    margin-left: 16px;
+    margin-right: 540px;
+  }
+  .playlistsTitle:hover{
+    color: white;
+  }
+  .playlistAlbum:hover{
+    color: white;
+  }
+  .playlistDate{
+    margin-left: 344px;
+    margin-right: 291px;
+  }
+  .playlistDate:hover{
+    color: white;
+  }
+  .gray{
+    color: #BBC0C2;
+  }
+  .fs14{
+    font-size: 14px;
+  }

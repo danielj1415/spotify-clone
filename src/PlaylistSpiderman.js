@@ -23,6 +23,7 @@ import PlaylistClockGray from "./assets/images/icons/PlaylistClockGray.svg";
 import PlaylistClockWhite from "./assets/images/icons/PlaylistClockWhite.svg";
 
 import PlaylistSpidermanData from "./PlaylistSpidermanData";
+import PlaylistControls3 from './PlaylistControls3';
 
 function PlaylistSpiderman() {
 
@@ -71,6 +72,7 @@ function PlaylistSpiderman() {
           </div>
         </div>
         <div className = "bottomGradientSpiderman">
+          {/*
           <div className = "playlistControlsControls">
             <div className = "playlistControls1">
               <img src = {isPlaybuttonClicked ? PlaylistPlaying : PlaylistPause} className = "playlistPause"
@@ -98,15 +100,7 @@ function PlaylistSpiderman() {
               onMouseLeave={() => setDropdownHovered(false)}/>
             </div>
           </div>
-          <div className = "playlistControls3">
-            <p className = "playlistIndex fs14 gray">#</p>
-            <p className = "playlistsTitle fs14 gray">Title</p>
-            <p className = "playlistAlbum fs14 gray">Album</p>
-            <p className = "playlistDate fs14 gray">Date added</p>
-            <img src = {isClockHovered ? PlaylistClockWhite : PlaylistClockGray} className = "playlistDuration"
-            onMouseEnter={() => setClockHovered(true)}
-            onMouseLeave={() => setClockHovered(false)}/>
-          </div>
+          <PlaylistControls3/>
           <div className = "playlistSong">
             <div className = "playlistHovered">
               <p className = "gray fs14 songIndex">1</p>
@@ -122,7 +116,7 @@ function PlaylistSpiderman() {
               <p className = "gray fs14 songDuration">{formatDuration(PlaylistSpidermanData[0].duration)}</p>
               <img src = {PlaylistMoreGray} className = "songMore"/>
             </div>
-          </div>
+  </div>*/}
         </div>
       </div>
     </div>

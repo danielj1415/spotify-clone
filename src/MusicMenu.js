@@ -103,7 +103,7 @@ function MusicMenu() {
           <img src = {playlist2} className = "songPlaying" alt = "song1"/>
           <div>
             <p className = "songName">talk</p>
-            <p className = "songArtist">Keshi</p>
+            <p className = "songArtistPlaying">Keshi</p>
           </div>
           <img src = {isHeartSelected ? heartIconGreen : isHeartHovered ? heartIconWhite : heartIconGray} className = "heartIcon" alt = "heartIcon" 
           onMouseEnter={() => setHeartHovered(true)}

@@ -1,277 +1,252 @@
 .spidermanContainer{
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    width: 1476px;
-    height: 840px;
-    background-color: #131313; /* Blue color with 50% opacity */
-    z-index: 2; /* Make sure the overlay is on top of everything */
-    border-radius: 8px;
-    overflow: auto;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 1476px;
+  height: 840px;
+  background-color: #131313; /* Blue color with 50% opacity */
+  z-index: 2; /* Make sure the overlay is on top of everything */
+  border-radius: 8px;
+  overflow: auto;
 }
 
 
 @media (min-height: 880px) and ( max-height: 880px){
-  .spidermanContainer{
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    width: 1476px;
-    height: 782px;
-    z-index: 2; /* Make sure the overlay is on top of everything */
-    border-radius: 8px;
-    overflow: auto;
-  }
+.spidermanContainer{
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 1476px;
+  height: 782px;
+  z-index: 2; /* Make sure the overlay is on top of everything */
+  border-radius: 8px;
+  overflow: auto;
+}
 }
 
 @media (min-height: 769px) and ( max-height: 769px){
-  .spidermanContainer{
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    width: 1068px;
-    height: 672px;
-    z-index: 2; /* Make sure the overlay is on top of everything */
-    border-radius: 8px;
-    overflow: auto;
-  }
-  
-  .fs96.white.bold{
-    font-size: 64px;
-  }
-  @media (max-height: 769px) and (min-height: 769px){
-    .topGradientSpiderman{
-      width: 1068px;
-      height: 340px;
-      background: linear-gradient(to bottom, #C81D8B 0%, #690F49 95%);
-    }
-    .bottomGradientSpiderman{
-      width: 1068px;
-      height: 1200px;
-      background: linear-gradient(to bottom, #4E0C37 0%, #131313 20%);
-    }
-  }
+.spidermanContainer{
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 1068px;
+  height: 672px;
+  z-index: 2; /* Make sure the overlay is on top of everything */
+  border-radius: 8px;
+  overflow: auto;
 }
 
-.randomText{
-    color: white;
+.fs96.white.bold{
+  font-size: 64px;
 }
-
-.playlistCoverSpiderman{
-    width: 232px;
-    height: 232px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.white{
-    color: white;
-}
-
-.gray{
-    color: #BBC0C2;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-.fs14{
-    font-size: 14px;
-}
-
-.fs96{
-    font-size: 96px;
-}
-
-.noBubble{
-    margin-right: 4px;
-}
-
-.profileCreatorSongInfo{
-    display: flex;
-    align-items: center;
-}
-
-.playlistInformation{
-    display: flex;
-    align-items: end;
-    margin-left: 24px;
-    margin-top: 84px;
-}
-  
-  .fs14, .fs96, .white, .gray, .bold {
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
-  }
-
-  .publicNameInfo{
-    margin-left: 24px;
-  }
-  
-  .publicPlaylist{
-    margin-bottom: 0px; /* Adjust the margin at the bottom of the p elements */
-  }
-  
-  .profileCreatorSongInfo {
-    margin-top: 24px; /* Adjust the margin at the top of the div */
-  }
-  
-  /* Optional: If you want to adjust spacing between the p elements inside profileCreatorSongInfo */
-  .profileCreatorSongInfo{
-    margin-right: 4px; /* Adjust the margin between the p elements */
-  }
-
-  .totalMinutes{
-    margin-left: 4px;
-  }
-
-  .dot {
-    padding: 0 4px; /* Adjust the padding values as needed */
-  }
+@media (max-height: 769px) and (min-height: 769px){
   .topGradientSpiderman{
-    width: 1476px;
+    width: 1068px;
     height: 340px;
     background: linear-gradient(to bottom, #C81D8B 0%, #690F49 95%);
   }
   .bottomGradientSpiderman{
-    width: 1476px;
+    width: 1068px;
     height: 1200px;
     background: linear-gradient(to bottom, #4E0C37 0%, #131313 20%);
   }
+}
+}
 
-  .playlistControlsControls{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 24px;
-    margin-right: 34px;
-    margin-top: 24px;
-  }
-  .playlistControls1{
-    display: flex;
-    align-items: center;
-  }
-  .playlistControls2{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-    .playlistControls3{
-    display: flex;
-    align-items: center;
-    margin-left: 45px;
-    margin-top: 36px;
-  }
+.randomText{
+  color: white;
+}
 
-  .playlistPause{
-    width: 56px;
-    height: 56px;
-  }
-  .playlistEnhance{
-    width: 88px;
+.playlistCoverSpiderman{
+  width: 232px;
+  height: 232px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 
-    height: 32px; 
-    margin-left: 33px;
-    margin-right: 25px;
-  }
-  .playlistDownload{
-    width: 30px;
-    height: 30px;
-  }
-  .playlistInvite{
-    width: 32px;
-    height: 30px;
-    margin-left: 25px;
-    margin-right: 28px;
-  }
-  .playlistMore{
-    width: 24px;
-    height: 4px;
-  }
-  .playlistCustom{
-    margin-left: 28px;
-    margin-right: 10px;
-  }
-  .playlistCustom:hover{
-    color: white;
-  }
+.white{
+  color: white;
+}
 
-  .playlistIndex:hover{
-    color: white;
-  }
-  .playlistsTitle{
-    margin-left: 16px;
-    margin-right: 540px;
-  }
-  .playlistsTitle:hover{
-    color: white;
-  }
-  .playlistAlbum:hover{
-    color: white;
-  }
-  .playlistDate{
-    margin-left: 344px;
-    margin-right: 291px;
-  }
-  .playlistDate:hover{
-    color: white;
-  }
+.gray{
+  color: #BBC0C2;
+}
 
-  .playlistHovered{
-    display: flex;
-    align-items: center;
-    background-color: green;
-    width: 1428px;
-    height: 56px;
-    margin-left: 24px;
-  }
+.bold{
+  font-weight: bold;
+}
 
-  .songImage{
-    width: 40px;
-    height: 40px;
-  }
-  .songTitle{
-    margin: 4px 0;
-  }
-  .songArtist{
-    margin: 6px 0;
-  }
-  .songTitleArtists{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: blue;
-    width: 488px;
-    height: 40px;
-    margin-left: 16px;
-  }
-  .songAlbum{
-    width: 362px;
-    height: 40px;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
-  }
-  .songIndex{
-    margin-left: 21px;
-  }
-  .songImage{
-    margin-left: 18px;
-  }
-  .songDate{
-    margin-left: 24px;
-  }
+.fs14{
+  font-size: 14px;
+}
 
-  .songDuration{
-    margin-left: 270px;
-  }
-  .songMore{
-    width: 24px;
-    height: 4px;
-    margin-left: 12px;
-  }
+.fs96{
+  font-size: 96px;
+}
 
-  
+.noBubble{
+  margin-right: 4px;
+}
 
+.profileCreatorSongInfo{
+  display: flex;
+  align-items: center;
+}
+
+.playlistInformation{
+  display: flex;
+  align-items: end;
+  margin-left: 24px;
+  margin-top: 84px;
+}
+
+.fs14, .fs96, .white, .gray, .bold {
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+}
+
+.publicNameInfo{
+  margin-left: 24px;
+}
+
+.publicPlaylist{
+  margin-bottom: 0px; /* Adjust the margin at the bottom of the p elements */
+}
+
+.profileCreatorSongInfo {
+  margin-top: 24px; /* Adjust the margin at the top of the div */
+}
+
+/* Optional: If you want to adjust spacing between the p elements inside profileCreatorSongInfo */
+.profileCreatorSongInfo{
+  margin-right: 4px; /* Adjust the margin between the p elements */
+}
+
+.totalMinutes{
+  margin-left: 4px;
+}
+
+.dot {
+  padding: 0 4px; /* Adjust the padding values as needed */
+}
+.topGradientSpiderman{
+  width: 1476px;
+  height: 340px;
+  background: linear-gradient(to bottom, #C81D8B 0%, #690F49 95%);
+}
+.bottomGradientSpiderman{
+  width: 1476px;
+  height: 1200px;
+  background: linear-gradient(to bottom, #4E0C37 0%, #131313 20%);
+}
+
+.playlistControlsControls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 34px;
+  margin-top: 24px;
+}
+.playlistControls1{
+  display: flex;
+  align-items: center;
+}
+.playlistControls2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.playlistPause{
+  width: 56px;
+  height: 56px;
+}
+.playlistEnhance{
+  width: 88px;
+
+  height: 32px; 
+  margin-left: 33px;
+  margin-right: 25px;
+}
+.playlistDownload{
+  width: 30px;
+  height: 30px;
+}
+.playlistInvite{
+  width: 32px;
+  height: 30px;
+  margin-left: 25px;
+  margin-right: 28px;
+}
+.playlistMore{
+  width: 24px;
+  height: 4px;
+}
+.playlistCustom{
+  margin-left: 28px;
+  margin-right: 10px;
+}
+.playlistCustom:hover{
+  color: white;
+}
+.playlistIndex:hover{
+  color: white;
+}
+
+.playlistHovered{
+  display: flex;
+  align-items: center;
+  width: 1428px;
+  height: 56px;
+  margin-left: 24px;
+  border-radius: 4px;
+}
+
+.playlistHovered:hover{
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+.songImage{
+  width: 40px;
+  height: 40px;
+}
+.songTitle{
+  margin: 4px 0;
+}
+.songArtist{
+  margin: 6px 0;
+}
+.songTitleArtists{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 488px;
+  height: 40px;
+  margin-left: 16px;
+}
+.songAlbum{
+  width: 362px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.songIndex{
+  margin-left: 21px;
+}
+.songImage{
+  margin-left: 18px;
+}
+.songDate{
+  margin-left: 24px;
+}
+
+.songDuration{
+  margin-left: 270px;
+}
+.songMore{
+  width: 24px;
+  height: 4px;
+  margin-left: 12px;
+}
